@@ -7,6 +7,6 @@ libraryDependencies ++= Seq(
   "org.reactivecouchbase" %% "reactivecouchbase-play" % "0.1-SNAPSHOT"
 )
 
-resolvers += "ancelin" at "https://raw.github.com/ReactiveCouchbase/repository/master/snapshots"
+resolvers += "ReactiveCouchbase" at "https://raw.github.com/ReactiveCouchbase/repository/master/snapshots"
 
 play.Project.playJavaSettings

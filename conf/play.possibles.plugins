@@ -1,0 +1,5 @@
+400:org.reactivecouchbase.play.plugins.CouchbasePlugin
+500:org.reactivecouchbase.play.plugins.CouchbaseCachePlugin
+600:org.reactivecouchbase.play.plugins.CouchbaseEvolutionsPlugin
+700:org.reactivecouchbase.play.plugins.CouchbaseFixturesPlugin
+1000:org.reactivecouchbase.play.plugins.CouchbaseN1QLPlugin

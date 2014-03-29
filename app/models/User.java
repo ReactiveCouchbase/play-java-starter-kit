@@ -3,7 +3,7 @@ package models;
 import com.couchbase.client.protocol.views.ComplexKey;
 import com.couchbase.client.protocol.views.Query;
 import com.couchbase.client.protocol.views.Stale;
-import net.spy.memcached.ops.OperationStatus;
+import org.reactivecouchbase.client.OpResult;
 import org.reactivecouchbase.play.java.Couchbase;
 import org.reactivecouchbase.play.java.CouchbaseBucket;
 import play.libs.F;
@@ -72,11 +72,11 @@ public class User {
                 });
     }
 
-    public static F.Promise<OperationStatus> save(User user) {
+    public static F.Promise<OpResult> save(User user) {
         return bucket.set(user.id, user);
     }
 
-    public static F.Promise<OperationStatus> remove(User user) {
+    public static F.Promise<OpResult> remove(User user) {
         return bucket.delete(user.id);
     }
 }

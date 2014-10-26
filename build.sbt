@@ -8,7 +8,7 @@ scalaVersion := "2.11.1"
 
 libraryDependencies ++= Seq(
   cache,
-  "org.reactivecouchbase" %% "reactivecouchbase-play" % "0.3-SNAPSHOT"
+  "org.reactivecouchbase" %% "reactivecouchbase-play" % "0.3"
 )
 
 resolvers += "ReactiveCouchbase" at "https://raw.github.com/ReactiveCouchbase/repository/master/snapshots"
